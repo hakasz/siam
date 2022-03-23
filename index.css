@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+li {
+  font-size: 1.75em;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: orange;
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(209, 103, 3);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+a {
+  border-color: black;
+  padding: 2.5px;
+  color: orange;
+}
+a:hover {
+  color: black;
+}
+
+.color-principal {
+  color: orange;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3em;
+  color: orange;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  font-size: 1.5em;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: orange;
+}
+
+#perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/siam8.jpeg);
+}
+
+#perfil h1 {
+  color: white;
+}
+
+#perfil button {
+  font-size: 1.75em;
+}
+
+#conoce-zoe .container {
+  padding: 200px 12px;
+  text-align: center;
+}
+
+#gustos-siam {
+  background-color: rgb(30, 30, 30);
+  text-align: center;
+  color: white;
+}
+
+#gustos-siam h2 {
+  color: orange;
+  padding-top: 0;
+  font-size: 3.2em;
+}
+
+#gustos-siam p {
+  display: none;
+}
+
+#gustos-siam .container {
+  padding: 150px 12px;
+}
+
+#gustos-siam .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/siam1.jfif);
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/siam3.jpeg);
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/siam4.jpeg);
+}
+
+#curiosidades .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 250px 12px;
+}
+
+#curiosidades ul {
+  list-style: none;
+}
+
+#curiosidades h2 {
+  font-size: 3em;
+}
+
+#curiosidades li {
+  text-align: center;
+  margin: 16px 0px;
+  font-weight: bold;
+}
+
+#llevatelo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+}
+
+#llevatelo button {
+  font-size: 5vw;
+}
+
+#llevatelo h2 {
+  font-size: 9vw;
+}
+
+footer {
+  background-color: rgb(245, 245, 245);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 1000px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header a {
+    font-size: 1em;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    font-size: 1.9em;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0%;
+    padding-right: 20px;
+  }
+
+  #perfil h1 {
+    font-size: 5em;
+  }
+
+  #conoce-zoe .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #conoce-zoe h2 {
+    margin-top: 0px;
+  }
+
+  #conoce-zoe .img-container {
+    background-image: url("img/zoe1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+  }
+
+  #conoce-zoe .texto {
+    width: 50%;
+    max-width: 600px;
+    padding: 0px 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #gustos-siam .contenedor-cartas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #gustos-siam p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #gustos-siam h2 {
+    font-size: 4em;
+  }
+
+  #gustos-siam h3 {
+    margin-top: 0;
+  }
+
+  #curiosidades .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #curiosidades .gatito {
+    background-image: url("img/logo-gato.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 250px;
+    width: 250px;
+  }
+
+  #curiosidades ul {
+    list-style: inside;
+  }
+
+  #curiosidades li {
+    text-align: initial;
+  }
+
+  #curiosidades .lista {
+    margin: 0;
+    padding: 30px;
+  }
+
+  #llevatelo h2 {
+    font-size: 5em;
+  }
+
+  #llevatelo button {
+    font-size: 2em;
+  }
+}
